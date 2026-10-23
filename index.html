@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VikasVerse — Learn. Connect. Grow.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" data-page="Dashboard"><span class="brand-mark">V<span>↗</span></span><span>Vikas<span class="brand-violet">Verse</span></span></a>
+    <nav class="side-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-page="Dashboard"><span>▦</span>Dashboard</button>
+      <button class="nav-item" data-page="Social Feed"><span>▤</span>Social Feed</button>
+      <button class="nav-item" data-page="Explore Opportunities"><span>◎</span>Explore Opportunities</button>
+      <button class="nav-item" data-page="SkillPath AI"><span>⌘</span>SkillPath AI</button>
+      <button class="nav-item" data-page="ScamSense AI"><span>⬡</span>ScamSense AI</button>
+      <button class="nav-item" data-page="My Network"><span>♧</span>My Network</button>
+      <button class="nav-item" data-page="Learning Hub"><span>▣</span>Learning Hub</button>
+      <button class="nav-item" data-page="Saved Opportunities"><span>♧</span>Saved Opportunities</button>
+      <button class="nav-item" data-page="My Profile"><span>♙</span>My Profile</button>
+      <button class="nav-item" data-page="Settings"><span>⚙</span>Settings</button>
+    </nav>
+    <div class="sidebar-promo"><strong>Learn. Connect. Grow.</strong><p>Ask SkillPath AI what to learn next.</p><button class="button white full" data-page="SkillPath AI">Open SkillPath</button></div>
+    <div class="sidebar-foot">VikasVerse <span>· Demo prototype</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      <div class="search-wrap"><span>⌕</span><input id="globalSearch" placeholder="Search opportunities, skills, people..." aria-label="Search"></div>
+      <div class="top-actions"><button class="button primary ai-top" data-page="SkillPath AI">✧ AI Assistant</button><button class="icon-button" id="notificationsBtn" aria-label="Notifications">♧<i class="notification-dot"></i></button><button class="icon-button" id="messagesBtn" aria-label="Messages">▱</button><button class="avatar small" id="profileMenu">VK</button></div>
+      <div class="popover hidden" id="notificationPanel"><strong>You're all caught up!</strong><p class="muted">New deadline reminders will appear here.</p></div>
+    </header>
+    <section class="page-wrap">
+      <div class="page-heading"><div><p class="eyebrow" id="todayLabel">YOUR GROWTH, AT A GLANCE</p><h1 id="pageTitle">Good morning, Vikas 👋</h1><p class="muted" id="pageSubtitle">Here's your growth snapshot.</p></div><span class="demo-pill">DEMO DATA</span></div>
+      <div id="pageContent"></div>
+      <footer class="footer">© 2026 VikasVerse <span>Learn. Connect. Grow.</span><span>Sample data · AI features are illustrative</span></footer>
+    </section>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><h2 id="modalTitle">Create a post</h2><button class="icon-button" id="closeModal" aria-label="Close">×</button></div><div id="modalContent"></div></div></div>
+<script src="/static/app.js"></script>
+</body></html>
